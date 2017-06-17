@@ -2,19 +2,26 @@ package type
 
 import commons.Errors
 import commons.throwError
+import java.awt.color.ColorSpace
 
 /**
  * Created by daigomatsuoka on 16/06/17.
  */
 
-class Matrix(valuesStr: String) {
+class Matrix {
 
     private var rows = 0
     private var cols = 0
     private var matrixValues: Array<Double> = Array(0, { 0.0 })
 
-    init {
+    constructor(valuesStr: String) {
         parseStringToArray(valuesStr)
+    }
+
+    private constructor(rows: Int, cols: Int, values: Array<Double>) {
+        this.rows = rows
+        this.cols = cols
+        this.matrixValues = values
     }
 
     /**
@@ -30,7 +37,14 @@ class Matrix(valuesStr: String) {
     }
 
     operator fun plus(matrix: Matrix): Matrix {
-        TODO()
+        val bothMatrices = matrixValues.zip(matrix.matrixValues)
+        val resultMatrix = Array(rows * cols, {0.0})
+
+        bothMatrices.forEachIndexed { index, pair ->
+            resultMatrix[index] = pair.first + pair.second
+        }
+
+        return Matrix(rows, cols, resultMatrix)
     }
 
     operator fun minus(matrix: Matrix): Matrix {
@@ -131,15 +145,9 @@ class Matrix(valuesStr: String) {
 fun main(args: Array<String>) {
 
     val m = Matrix("12,13,14:14,16,18")
+    val n = Matrix("1,1,1:1,1,1")
 
-    println(m)
-    println(m.shape)
-    println(m[0, 2])
-    m[0, 2] = 16.0
-    println(m[0, 2])
 
-    m.forEach { i, j, value ->
-        println("i $i - j $j - val $value")
-    }
+    println(m + n)
 }
 
