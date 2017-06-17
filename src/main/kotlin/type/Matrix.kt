@@ -17,6 +17,10 @@ class Matrix(valuesStr: String) {
         parseStringToArray(valuesStr)
     }
 
+    /**
+     * OPERATORS OVERRIDE
+     */
+
     operator fun get (x: Int, y: Int): Double {
         TODO()
     }
@@ -25,12 +29,35 @@ class Matrix(valuesStr: String) {
         TODO()
     }
 
-
     operator fun plus(matrix: Matrix): Matrix {
         TODO()
     }
 
     operator fun minus(matrix: Matrix): Matrix {
+        TODO()
+    }
+
+    operator fun times(matrix: Matrix): Matrix {
+        TODO()
+    }
+
+    operator fun times(scalar: Double): Matrix {
+        TODO()
+    }
+
+    operator fun div(matrix: Matrix): Matrix {
+        TODO()
+    }
+
+    operator fun div(scalar: Double): Matrix {
+        TODO()
+    }
+
+    override fun equals(other: Any?): Boolean {
+        return super.equals(other)
+    }
+
+    fun dot(matrix: Matrix): Matrix {
         TODO()
     }
 
