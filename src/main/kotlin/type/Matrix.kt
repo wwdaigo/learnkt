@@ -57,6 +57,21 @@ class Matrix(valuesStr: String) {
         return super.equals(other)
     }
 
+    /**
+     * LIST METHODS
+     */
+
+    fun forEach(action: (i: Int, j: Int, value: Double) -> Unit) {
+        var row = 0
+        var col = 0
+        matrixValues.forEachIndexed { index, d ->
+            col = index % cols
+            if (index % cols == 0 && index > 0) row ++
+
+            action(row, col, d)
+        }
+    }
+
     fun dot(matrix: Matrix): Matrix {
         TODO()
     }
@@ -122,5 +137,9 @@ fun main(args: Array<String>) {
     println(m[0, 2])
     m[0, 2] = 16.0
     println(m[0, 2])
+
+    m.forEach { i, j, value ->
+        println("i $i - j $j - val $value")
+    }
 }
 
