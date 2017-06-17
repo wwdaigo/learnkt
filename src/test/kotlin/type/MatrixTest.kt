@@ -36,12 +36,20 @@ class MatrixTest {
 
     @Test
     fun matrixCreationWithWrongCreator() {
-
+        val param = "1, 2: 3, A"
+        val exception = shouldThrow<MatrixException> {
+            Matrix(param)
+        }
+        assert(exception.message == Errors.MATRIX_WRONG_CREATOR.description)
     }
 
     @Test
     fun matrixCreationWithNoDimensionData() {
-
+        val param = ""
+        val exception = shouldThrow<MatrixException> {
+            Matrix(param)
+        }
+        assert(exception.message == Errors.NO_DIMENSIONAL_MATRIX.description)
     }
 
     @Test

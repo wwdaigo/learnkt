@@ -129,6 +129,9 @@ class Matrix {
      */
 
     private fun parseStringToArray(values: String) {
+
+        if (values.isBlank()) throwError(Errors.NO_DIMENSIONAL_MATRIX)
+
         val lines = values.split(":")
 
         if (lines.isEmpty()) {
@@ -148,7 +151,12 @@ class Matrix {
         matrixValues = Array(colValues.size, { 0.0 })
 
         colValues.forEachIndexed { index, v ->
-            matrixValues[index] = v.trim().toDouble()
+            try {
+                matrixValues[index] = v.trim().toDouble()
+            }
+            catch (ignore: NumberFormatException) {
+                throwError(Errors.MATRIX_WRONG_CREATOR)
+            }
         }
     }
 
