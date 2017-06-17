@@ -67,6 +67,15 @@ class Matrix {
         TODO()
     }
 
+    fun dot(matrix: Matrix): Matrix {
+        TODO()
+    }
+
+    fun divide(matrix: Matrix): Matrix {
+        TODO()
+    }
+
+
     override fun equals(other: Any?): Boolean {
         return super.equals(other)
     }
@@ -86,19 +95,23 @@ class Matrix {
         }
     }
 
-    fun dot(matrix: Matrix): Matrix {
-        TODO()
-    }
-
+    // Determinant
     val det: Double
     get() {
         TODO()
     }
 
-    val T: Matrix
+    // Transposed
+    val transposed: Matrix
     get() {
         TODO()
     }
+
+    // Inverse
+    val inverse: Matrix
+        get() {
+            TODO()
+        }
 
     val shape: Pair<Int, Int>
     get() = Pair<Int, Int>(rows, cols)
