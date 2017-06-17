@@ -4,46 +4,42 @@ package type
  * Created by daigomatsuoka on 16/06/17.
  */
 
-class Matrix {
+class Matrix(valuesStr: String) {
 
-    var matrixValues: Array<Array<Double>> = Array(0, { emptyArray<Double>() })
+    private var rows = 0
+    private var cols = 0
+    private var matrixValues: Array<Double> = Array(0, { 0.0 })
 
-    constructor(vararg values: Array<Double>) {
-
-        if (isValidDimension(*values)) {
-            matrixValues = Array(values.size, { emptyArray<Double>() })
-
-            for ((index, line) in values.withIndex()) {
-                matrixValues[index] = line
-            }
-        } else {
-            Throwable("Columns size should match on each line").printStackTrace()
-        }
-
-    }
-
-    constructor(rows: Int, cols: Int) {
-        val line = Array<Double>(cols) { 0.0 }
-        matrixValues = Array(rows, { line })
+    init {
+        parseStringToArray(valuesStr)
     }
 
     operator fun get (x: Int, y: Int): Double {
-        return matrixValues[x][y]
+        TODO()
     }
 
     operator fun set(x: Int, y: Int, value: Double) {
-        matrixValues[x][y] = value
+        TODO()
     }
 
-/*
-    operator fun plus(matrix: Matrix): Matrix {
 
+    operator fun plus(matrix: Matrix): Matrix {
+        TODO()
     }
 
     operator fun minus(matrix: Matrix): Matrix {
+        TODO()
+    }
 
-    }*/
+    val det: Double
+    get() {
+        TODO()
+    }
 
+    val T: Matrix
+    get() {
+        TODO()
+    }
 
     private fun isValidDimension(vararg values: Array<Double>): Boolean {
         if (values.isEmpty()) return false
@@ -56,12 +52,26 @@ class Matrix {
 
         return true
     }
+
+    private fun parseStringToArray(values: String) {
+        val lines = values.split(":")
+
+        if (lines.)
+        rows = lines.size
+        val cols = lines.joinToString(",").split(",")
+
+    }
 }
 
 fun main(args: Array<String>) {
 
-    val m = Matrix(arrayOf(11.0, 12.0), arrayOf(13.1, 0.0))
-    println(m[1, 1])
+
+    val m = Matrix("12,13,14:14,16,18")
+
+    val s = m + m
+    println(s[0,0])
+
+
 
     val n = Matrix(3, 2)
     println(n[1,1])
