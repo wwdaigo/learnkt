@@ -3,6 +3,7 @@ package type
 import commons.Errors
 import commons.throwError
 import java.awt.color.ColorSpace
+import kotlin.coroutines.experimental.buildIterator
 
 /**
  * Created by daigomatsuoka on 16/06/17.
@@ -37,6 +38,9 @@ class Matrix {
     }
 
     operator fun plus(matrix: Matrix): Matrix {
+
+        if (matrix.shape != shape) throwError(Errors.SIZES_SHOULD_MATCH)
+
         val bothMatrices = matrixValues.zip(matrix.matrixValues)
         val resultMatrix = Array(rows * cols, {0.0})
 

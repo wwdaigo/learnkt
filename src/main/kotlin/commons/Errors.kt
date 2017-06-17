@@ -9,6 +9,7 @@ import commons.exceptions.MatrixException
 enum class Errors(val description: String) {
     MATRIX_WRONG_CREATOR("MATRIX_WRONG_CREATOR"),
     NO_DIMENSIONAL_MATRIX("NO_DIMENSIONAL_MATRIX"),
+    SIZES_SHOULD_MATCH("SIZES_SHOULD_MATCH"),
     COLS_DONT_MATCH("COLS_DONT_MATCH")
 }
 

@@ -54,12 +54,25 @@ class MatrixTest {
 
     @Test
     fun sumMatrixWithSameSize() {
+        val matrix1 = Matrix("1,2:3,4")
+        val matrix2 = Matrix("5,6:7,8")
+        val sum = matrix1 + matrix2
 
+        assert(sum[0,0] == 6.0, { "[0,0] should be 6.0 but it was ${sum[0,0]}" })
+        assert(sum[0,1] == 8.0, { "[0,1] should be 8.0 but it was ${sum[0,1]}" })
+        assert(sum[1,0] == 10.0, { "[1,0] should be 10.0 but it was ${sum[1,0]}" })
+        assert(sum[1,1] == 12.0, { "[1,1] should be 12.0 but it was ${sum[1,1]}" })
     }
 
     @Test
     fun sumMatrixWithDifferentSizes() {
+        val matrix1 = Matrix("1,2:3,4")
+        val matrix2 = Matrix("1:2")
 
+        val exception = shouldThrow<MatrixException> {
+            matrix1 + matrix2
+        }
+        assert(exception.message == Errors.SIZES_SHOULD_MATCH.description)
     }
 
     @Test
