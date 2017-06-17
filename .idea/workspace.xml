@@ -2,15 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ede2b9d3-3fed-42c6-9d4c-42844add5cb2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/kotlin/type/MatrixTest.kt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/kotlin/type/Vector.kt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_annotations_2_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_18_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sksamuel_koors_koors_0_90_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_kotlintest_kotlintest_2_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_6_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_6_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_javassist_javassist_3_18_2_GA.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_reflect_1_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_2_7_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_2_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_reflections_reflections_0_9_10.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/commons/exceptions/MatrixException.kt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/type/Vector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/type/VectorKt.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/META-INF/learnkt_main.kotlin_module" afterPath="$PROJECT_DIR$/build/classes/main/META-INF/learnkt_main.kotlin_module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/commons/Errors.class" afterPath="$PROJECT_DIR$/build/classes/main/commons/Errors.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/commons/ErrorsKt.class" afterPath="$PROJECT_DIR$/build/classes/main/commons/ErrorsKt.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/type/Matrix.class" afterPath="$PROJECT_DIR$/build/classes/main/type/Matrix.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/type/MatrixKt.class" afterPath="$PROJECT_DIR$/build/classes/main/type/MatrixKt.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/learnkt_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/learnkt_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/commons/Errors.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/commons/Errors.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/type/Matrix.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/type/Matrix.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/kotlin/type/MatrixTest.kt" afterPath="$PROJECT_DIR$/src/test/kotlin/type/MatrixTest.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -37,11 +53,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Matrix.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Matrix.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/type/Matrix.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1470">
-              <caret line="98" column="19" lean-forward="true" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
+            <state relative-caret-position="-471">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="e#14#94#0" expanded="true" />
               </folding>
@@ -49,11 +65,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MatrixTest.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MatrixTest.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/kotlin/type/MatrixTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="147" column="30" lean-forward="false" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
+            <state relative-caret-position="253">
+              <caret line="33" column="71" lean-forward="false" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+              <folding>
+                <element signature="e#14#218#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MatrixException.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/commons/exceptions/MatrixException.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -62,8 +90,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+            <state relative-caret-position="345">
+              <caret line="23" column="47" lean-forward="false" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -72,8 +100,8 @@
       <file leaf-file-name="Errors.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/commons/Errors.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            <state relative-caret-position="225">
+              <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -94,7 +122,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.3-bin/64bhckfm0iuu9gap9hg3r7ev2/gradle-3.3" />
+        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.3-all/55gk2rcmfc6p2dg9u9ohc3hw9/gradle-3.3" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -287,8 +315,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4493130152000" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1955608063" />
+        <entry key="$PROJECT_DIR$" value="4493132938000" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1191857007" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="829777938" />
       </map>
     </option>
@@ -488,14 +516,16 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/kotlin/Vector.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/type/Vector.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/commons/Errors.kt" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/kotlin/type/Matrix.kt" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/commons/exceptions/MatrixException.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/commons/Errors.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/type/MatrixTest.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-3" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="873" />
@@ -639,6 +669,40 @@
               <option name="myItemId" value="kotlin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learnkt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learnkt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kotlin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exceptions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -662,7 +726,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.type.MatrixKt">
+  <component name="RunManager" selected="JUnit.MatrixTest.matrixCreationWithWrongDimensions">
     <configuration default="false" name="type.VectorKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="type.VectorKt" />
@@ -687,6 +751,84 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="learnkt_main" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="MatrixTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="type.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="learnkt_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="type" />
+      <option name="MAIN_CLASS_NAME" value="type.MatrixTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MatrixTest.matrixCreationSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="type.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="learnkt_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="type" />
+      <option name="MAIN_CLASS_NAME" value="type.MatrixTest" />
+      <option name="METHOD_NAME" value="matrixCreationSuccessfully" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MatrixTest.matrixCreationWithWrongDimensions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="type.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="learnkt_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="type" />
+      <option name="MAIN_CLASS_NAME" value="type.MatrixTest" />
+      <option name="METHOD_NAME" value="matrixCreationWithWrongDimensions" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -893,14 +1035,20 @@
       <listeners />
       <method />
     </configuration>
-    <list size="2">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Kotlin.type.VectorKt" />
       <item index="1" class="java.lang.String" itemvalue="Kotlin.type.MatrixKt" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MatrixTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MatrixTest.matrixCreationSuccessfully" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MatrixTest.matrixCreationWithWrongDimensions" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Kotlin.type.MatrixKt" />
-        <item index="1" class="java.lang.String" itemvalue="Kotlin.type.VectorKt" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MatrixTest.matrixCreationWithWrongDimensions" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MatrixTest" />
+        <item index="2" class="java.lang.String" itemvalue="Kotlin.type.MatrixKt" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MatrixTest.matrixCreationSuccessfully" />
+        <item index="4" class="java.lang.String" itemvalue="Kotlin.type.VectorKt" />
       </list>
     </recent_temporary>
   </component>
@@ -920,8 +1068,40 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="MatrixTest - 2017.06.17 at 19h 18m 33s.xml">
+      <configuration name="MatrixTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatrixTest_matrixCreationWithWrongDimensions - 2017.06.17 at 19h 27m 58s.xml">
+      <configuration name="MatrixTest.matrixCreationWithWrongDimensions" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatrixTest_matrixCreationWithWrongDimensions - 2017.06.17 at 19h 29m 04s.xml">
+      <configuration name="MatrixTest.matrixCreationWithWrongDimensions" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatrixTest_matrixCreationWithWrongDimensions - 2017.06.17 at 19h 29m 30s.xml">
+      <configuration name="MatrixTest.matrixCreationWithWrongDimensions" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatrixTest_matrixCreationWithWrongDimensions - 2017.06.17 at 19h 30m 08s.xml">
+      <configuration name="MatrixTest.matrixCreationWithWrongDimensions" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatrixTest_matrixCreationWithWrongDimensions - 2017.06.17 at 19h 31m 16s.xml">
+      <configuration name="MatrixTest.matrixCreationWithWrongDimensions" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatrixTest_matrixCreationWithWrongDimensions - 2017.06.17 at 19h 33m 58s.xml">
+      <configuration name="MatrixTest.matrixCreationWithWrongDimensions" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatrixTest_matrixCreationWithWrongDimensions - 2017.06.17 at 19h 34m 07s.xml">
+      <configuration name="MatrixTest.matrixCreationWithWrongDimensions" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatrixTest_matrixCreationWithWrongDimensions - 2017.06.17 at 19h 34m 14s.xml">
+      <configuration name="MatrixTest.matrixCreationWithWrongDimensions" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatrixTest_matrixCreationWithWrongDimensions - 2017.06.17 at 19h 34m 21s.xml">
+      <configuration name="MatrixTest.matrixCreationWithWrongDimensions" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <frame x="-3" y="23" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -933,7 +1113,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -960,7 +1140,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1003,22 +1183,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/commons/Errors.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/type/Vector.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1027,20 +1191,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/type/MatrixTest.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.kotlintest/kotlintest/2.0.0/2bd65481c9a95d9e944305fefec5d36a3675b85d/kotlintest-2.0.0-sources.jar!/io/kotlintest/matchers/Matcher.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="147" column="30" lean-forward="false" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
+        <state relative-caret-position="346">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/type/Matrix.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="98" column="19" lean-forward="true" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
+        <state relative-caret-position="-471">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#14#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="47" lean-forward="false" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/commons/Errors.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/commons/exceptions/MatrixException.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/type/MatrixTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="33" column="71" lean-forward="false" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+          <folding>
+            <element signature="e#14#218#0" expanded="true" />
           </folding>
         </state>
       </provider>

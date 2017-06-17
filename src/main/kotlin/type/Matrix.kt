@@ -152,7 +152,7 @@ class Matrix {
         }
     }
 
-    private fun realIndex(x: Int, y: Int): Int = x * cols + rows
+    private fun realIndex(x: Int, y: Int): Int = x * cols + y
 }
 
 fun main(args: Array<String>) {
@@ -161,6 +161,6 @@ fun main(args: Array<String>) {
     val n = Matrix("1,1,1:1,1,1")
 
 
-    println(m + n)
+    println(m[1,2])
 }
 
