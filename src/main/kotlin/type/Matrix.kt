@@ -22,11 +22,11 @@ class Matrix(valuesStr: String) {
      */
 
     operator fun get (x: Int, y: Int): Double {
-        TODO()
+        return matrixValues[realIndex(x, y)]
     }
 
     operator fun set(x: Int, y: Int, value: Double) {
-        TODO()
+        matrixValues[realIndex(x, y)] = value
     }
 
     operator fun plus(matrix: Matrix): Matrix {
@@ -109,6 +109,8 @@ class Matrix(valuesStr: String) {
             matrixValues[index] = v.trim().toDouble()
         }
     }
+
+    private fun realIndex(x: Int, y: Int): Int = x * cols + rows
 }
 
 fun main(args: Array<String>) {
@@ -117,5 +119,8 @@ fun main(args: Array<String>) {
 
     println(m)
     println(m.shape)
+    println(m[0, 2])
+    m[0, 2] = 16.0
+    println(m[0, 2])
 }
 
