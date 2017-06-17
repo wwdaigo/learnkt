@@ -44,10 +44,20 @@ class Matrix(valuesStr: String) {
         TODO()
     }
 
-    val shape: String
-    get() {
-        TODO()
+    val shape: Pair<Int, Int>
+    get() = Pair<Int, Int>(rows, cols)
+
+    override fun toString(): String {
+        var s = ""
+        matrixValues.forEachIndexed { index, d ->
+           s += d.toString() + if ((index + 1) % cols == 0) "\n" else ", "
+        }
+        return s
     }
+
+    /**
+     * PRIVATE METHODS
+     */
 
     private fun parseStringToArray(values: String) {
         val lines = values.split(":")
@@ -79,5 +89,6 @@ fun main(args: Array<String>) {
     val m = Matrix("12,13,14:14,16,18")
 
     println(m)
+    println(m.shape)
 }
 
