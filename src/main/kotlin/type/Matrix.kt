@@ -1,5 +1,8 @@
 package type
 
+import commons.Errors
+import commons.throwError
+
 /**
  * Created by daigomatsuoka on 16/06/17.
  */
@@ -41,41 +44,40 @@ class Matrix(valuesStr: String) {
         TODO()
     }
 
-    private fun isValidDimension(vararg values: Array<Double>): Boolean {
-        if (values.isEmpty()) return false
-
-        var numCols = 0
-        for (row in values) {
-            if (numCols == 0) numCols = row.size
-            else if (numCols != row.size) return false
-        }
-
-        return true
+    val shape: String
+    get() {
+        TODO()
     }
 
     private fun parseStringToArray(values: String) {
         val lines = values.split(":")
 
-        if (lines.)
-        rows = lines.size
-        val cols = lines.joinToString(",").split(",")
+        if (lines.isEmpty()) {
+            throwError(Errors.NO_DIMENSIONAL_MATRIX)
+            return
+        }
 
+        rows = lines.size
+        val colValues = lines.joinToString(",").split(",")
+        cols = colValues.size / rows
+
+        if (rows * cols != colValues.size) {
+            throwError(Errors.COLS_DONT_MATCH)
+            return
+        }
+
+        matrixValues = Array(colValues.size, { 0.0 })
+
+        colValues.forEachIndexed { index, v ->
+            matrixValues[index] = v.trim().toDouble()
+        }
     }
 }
 
 fun main(args: Array<String>) {
 
-
     val m = Matrix("12,13,14:14,16,18")
 
-    val s = m + m
-    println(s[0,0])
-
-
-
-    val n = Matrix(3, 2)
-    println(n[1,1])
-    n[1,1] = 2.0
-    println(n[1,1])
+    println(m)
 }
 
